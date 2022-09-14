@@ -1,0 +1,59 @@
+(defn digits [num]
+(if (< n 10) [n] (conj (digits (quot num 10)) (rem num 10))))
+(defn digits [num]
+(if (< num 10) [num] (conj (digits (quot num 10)) (rem num 10))))
+(digits 111)
+(digits 3)
+(Math.pow(2, 3))
+(Math/pow(2, 3))
+(Math/pow 2 3)
+exit
+(count 43)
+exit
+(require armstrong-numbers)
+(require 'armstrong-numbers)
+(armstrong? 9)
+(armstrong-numbers/armstrong? 9)
+exit
+ (require 'armstrong-numbers)
+(armstrong? 9)
+ (armstrong-numbers/armstrong? 9)
+exit
+(require 'armstrong-numbers)
+(armstrong-numbers/armstrong? 9)
+exit
+(require 'armstrong-numbers)
+(armstrong-numbers/armstrong? 9)
+exit
+(require 'armstrong-numbers)
+(armstrong-numbers/armstrong? 9)
+(armstrong-numbers/armstrong? 21897142587612075)
+(armstrong-numbers/armstrong? 9926315)
+(def number 21897142587612075)
+(def nums (armstrong-numbers/digits number)
+)
+(nums)
+(str nums)
+(def exponent (count nums))
+(reduce (fn [acc, val] (+ acc (Math/pow val exponent))) 0 nums)
+(type (reduce (fn [acc, val] (+ acc (Math/pow val exponent))) 0 nums))
+(type 21897142587612075)
+exit
+(require 'armstrong-numbers)
+(armstrong-numbers/armstrong? 9)
+(def number 21897142587612075)
+(def nums (armstrong-numbers/digits number)
+(def exponent (count nums))
+(reduce (fn [acc, val] (+ acc (long (Math/pow val exponent)))) 0 nums)
+exit
+require 'armstrong-numbers)
+(armstrong-numbers/armstrong? 9)
+(def number 21897142587612075)
+(def nums (armstrong-numbers/digits number))
+(def exponent (count nums))
+(require 'armstrong-numbers)
+(def number 21897142587612075)
+(def nums (armstrong-numbers/digits number))
+(def exponent (count nums))
+(reduce (fn [acc, val] (+ acc (long (Math/pow val exponent)))) 0 nums)
+exit
